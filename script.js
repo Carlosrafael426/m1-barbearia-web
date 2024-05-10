@@ -21,31 +21,21 @@ const barbearia = {
 function buscaCortePorId(id) {
 
     for(let i = 0; i < barbearia.cortes.length; i++){
-        
-        if(id !== barbearia.cortes[i].id){
-
-            return "Corte não encontrado";
-
-        }else{
-        
+        if(barbearia.cortes[i].id === id){
             return barbearia.cortes[i];
         }
     }
+    return "Corte não encontrado"
 }    
 
 
 function buscaBarbaPorId(id) {
-    for (let i = 0; i < barbearia.barbas.length; i++) {
-
-        if (barbearia.barbas[i].id === id) {
-
-            return barbearia.barbas;
-
-        }else{
-            
-            return "corte não encontrado.";
+    for(let j = 0; j < barbearia.barbas.length; j++){
+        if(barbearia.barbas[j].id === id){
+            return barbearia.barbas[j];
         }
-    }            
+    }
+    return "Barba não encontrada"
 }
 
 function verificaStatusBarbearia() {
