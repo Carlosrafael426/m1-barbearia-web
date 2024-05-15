@@ -90,5 +90,4 @@ function atualizarServico(lista, id, valor, tipo) {
 function calculaTotal(pedido) {
     const somaValor = pedido.pedidoCortePreco + pedido.pedidoBarbaPreco
     return somaValor;
-
 }
